@@ -16,15 +16,15 @@ Currently the Digita Lora gateways don't seem to send Ack messages back to the e
 
 This means that the device has been configured to send the messages as unconfirmed messages. Your device will always print a "Successful transmission." message after each send and you will not know if the gateway received the message or not because of the reasons explained earlier.
 
-This example will configure the RN2483 Lora module for highest possible TXPower, Spreadin Factor 12 and adaptive data rate enabled for best possible signal on the device.
+This example will configure the RN2483 Lora module for highest possible TXPower, Spreading Factor 12 and adaptive data rate enabled for best possible signal on the device. The payload send from this example is the string "SODAQ " and the last byte will be a running number signifying the index of the sent message so you can easily check for dropped packages. 
 
 Put your own keys in Sodaq_Keys.h
 
-If you dont have your own Node-Red or NodeJS application running to listen and decrypt the messages from the IBM cloud you can use this webapplication for fast testing.
+If you don't have your own Node-Red or NodeJS application running to listen and decrypt the messages from the IBM cloud you can use this web application for fast testing.
 
 http://fcc-demo.eu-gb.mybluemix.net/
 
-user: fcc
+user: fcc  
 password: challenge
 
 The maps "my location" is currently hard coded to Helsinki City Hall, but once a message has been decoded it will display the gateway that received the message from you device on the map on a different marker named "lora gateway".
