@@ -6,7 +6,7 @@ http://futurecitychallenge.fi/
 
 This simple example aims to help you send your first message to the IBM cloud.
 
-To enable debug messages from the RN2483 LORA module you must edit the Sodaq_RN2483.cpp file located normally on a windows machine at C:\Users\<Username>\Documents\Arduino\libraries\Sodaq_RN2483\src\Sodaq_RN2483.cpp
+To enable debug messages from the RN2483 LORA module you must edit the Sodaq_RN2483.cpp file located normally on a windows machine at C:\Users\\<Username>\Documents\Arduino\libraries\Sodaq_RN2483\src\Sodaq_RN2483.cpp
 
 Inside the file you must uncomment the line number 26 #define DEBUG
 
